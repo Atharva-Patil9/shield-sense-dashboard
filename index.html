@@ -1118,7 +1118,7 @@ function updateCards(d) {
     lastUp ? new Date(lastUp).toLocaleTimeString() : '--';
 
   // Helmet online status
-  const isOnline = secAgo !== null && secAgo < 15;
+  const isOnline = secAgo !== null && secAgo < 30;
   const badge = document.getElementById('helmet-status-badge');
   badge.textContent = isOnline ? 'ONLINE' : 'OFFLINE';
   badge.className   = 'status-badge ' + (isOnline ? 'badge-online' : 'badge-offline');
